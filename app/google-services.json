@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199273872315",
+    "project_id": "kiosdesert",
+    "storage_bucket": "kiosdesert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199273872315:android:661cecb98a34c9620fe29e",
+        "android_client_info": {
+          "package_name": "com.example.table"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199273872315-qs7pip65u9471j9e50d5pmccmbh3fgu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrjEekDH76yVcJig8GKptFAtMgiOIzMcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199273872315-qs7pip65u9471j9e50d5pmccmbh3fgu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

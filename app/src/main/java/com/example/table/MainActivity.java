@@ -7,9 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.example.table.products.ProductActivity;
+import com.example.table.services.ServiceActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_products:
-                Intent intent_Products = new Intent(this,ProductActivity.class);
+                Intent intent_Products = new Intent(this, ProductActivity.class);
                 startActivity(intent_Products);
                 Toast.makeText(this,"Products",Toast.LENGTH_SHORT);
                 break;
             case R.id.action_service:
-                Intent intent_Service = new Intent(this,ServiceActivity.class);
+                Intent intent_Service = new Intent(this, ServiceActivity.class);
                 startActivity(intent_Service);
                 Toast.makeText(this,"Service",Toast.LENGTH_SHORT);
                 break;

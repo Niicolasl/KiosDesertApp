@@ -20,14 +20,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ServiceActivity"
+            android:name=".services.ServiceActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ProductActivity"
+            android:name=".products.ProductActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

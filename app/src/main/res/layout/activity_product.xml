@@ -1,95 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignWithParentIfMissing="false"
-    android:background="@color/white">
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recyclerview_productos"
+        android:layout_width="409dp"
+        android:layout_height="519dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/id_ap_textView_productos" />
 
     <TextView
-        android:id="@+id/txtProducts"
+        android:id="@+id/id_ap_textView_productos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Productos"
-        android:textSize="60sp"
+        android:textSize="60dp"
         android:textColor="@color/black"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"/>
+        android:paddingLeft="40dp"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/txtPostreArbol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/txtPostreFlor"
-        android:text="Postre Arbol"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:paddingLeft="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginTop="20dp"
-/>
-
-    <TextView
-        android:id="@+id/txtPostreFlor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:text="Postre Flor"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:paddingLeft="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="90dp"
-        android:layout_marginTop="70dp"
-/>
-
-    <TextView
-        android:id="@+id/txtPostreMono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtPostreFlor"
-        android:text="Postre Moño"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:paddingLeft="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="40dp"
- />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="171dp"
-        android:layout_height="142dp"
-        android:layout_above="@id/txtPostreFlor"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="42dp"
-        android:layout_marginBottom="-11dp"
-        android:layout_toRightOf="@id/txtPostreArbol"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/postre_arbol" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="171dp"
-        android:layout_height="106dp"
-        android:layout_above="@id/txtPostreMono"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginBottom="48dp"
-        android:layout_toRightOf="@id/txtPostreFlor"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/postre_flor" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="169dp"
-        android:layout_height="146dp"
-        android:layout_below="@+id/txtPostreFlor"
-        android:layout_marginLeft="22dp"
-        android:layout_toRightOf="@id/txtPostreMono"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/postre_mono" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
