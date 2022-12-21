@@ -39,7 +39,6 @@ public class ProductActivity extends AppCompatActivity {
         arrayList_productos.add(new Producto("Postre Arbol","$$$",R.drawable.postre_arbol));
         arrayList_productos.add(new Producto("Postre Flor","$$$",R.drawable.postre_flor));
         arrayList_productos.add(new Producto("Postre Moño","$$$",R.drawable.postre_mono));
-        arrayList_productos.add(new Producto("Postre Reno","$$$",R.drawable.postre_reno));
         arrayList_productos.add(new Producto("Proximamente","Estamos creando nuevas recetas...",R.drawable.postres_collage));
     }
 }
